@@ -68,8 +68,8 @@ session_start();
                                         <td><?= $modifydate; ?></td>
 
                                         <td>
-                                            <a href="galleryedit.php?galleryedit=<?= $galleryid; ?>" class="label label-sm label-warning">Edit</a><br><br>
-                                           <a href="edit/delete.php?galleryedit=<?= $galleryid; ?>" class="label label-sm label-danger">Delete</a>
+                                            <a href="galleryedit.php?galleryedit=<?= $galleryid; ?>"<i class="fa fa-pencil" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i> </a>
+                                           <a href="edit/delete.php?galleryedit=<?= $galleryid; ?>"<i class="fa fa-trash" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i> </a>
                                         </td>
                                     </tr>
                                     <?php } ?>

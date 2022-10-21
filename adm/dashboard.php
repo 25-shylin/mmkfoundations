@@ -5,8 +5,8 @@ session_start();
  }
  else {
     include("includes/database.php");
-    include('includes/header.php');
-    include('includes/sidebar.php');
+    include("includes/header.php");
+    include("includes/sidebar.php");
  ?>
 
     <!--==================================*

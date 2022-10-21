@@ -122,9 +122,9 @@ session_start();
                                             </td> -->
                                             
                                             <td>
-                                                <a href="disasterresponseedit.php?disasterresponseedit=<?= $disasterresponseid; ?>" class="label label-sm label-warning">Edit</a><br><br>
+                                                <a href="disasterresponseedit.php?disasterresponseedit=<?= $disasterresponseid; ?>"<i class="fa fa-pencil" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
                                                 
-                                               <a href="edit/delete.php?disasterresponseedit=<?= $disasterresponseid; ?>" class="label label-sm label-danger">Delete</a>
+                                               <a href="edit/delete.php?disasterresponseedit=<?= $disasterresponseid; ?>"<i class="fa fa-trash" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
                                             </td>
                                         </tr>
                                         <?php } ?>

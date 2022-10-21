@@ -38,6 +38,7 @@ session_start();
                                             <th>Project</th>
                                             <th>First Name</th>
                                             <th>Last Name</th>
+                                            <th>Beneficiary Eligible</th>
                                             <!-- <th>Permanat Address</th>
                                             <th>Current Address</th>
                                             <th>Guardian/ Parents/ Care of -Phone Number</th>
@@ -96,6 +97,13 @@ session_start();
                                             <td><?= $project; ?></td>
                                             <td><?= $firstname; ?></td>
                                             <td><?= $lastname; ?></td>
+                                            <td><?= $eligible; ?></td>
+                                            <!-- <td><?php if(['$eligible']=='1'){
+                                                echo "true";
+                                             } else {
+                                                    echo "false";
+                                                }
+                                            ?></td> -->
                                             <!-- <td><?= $permanataddress; ?></td>
                                             <td><?= $currentaddress; ?></td>
                                             <td><?= $guardianparentscareofphonenumber; ?></td>

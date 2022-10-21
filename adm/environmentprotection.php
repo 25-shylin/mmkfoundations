@@ -122,9 +122,9 @@ session_start();
                                                 <input type="submit" name="cancel" value="cancel" class="label-sm label-danger">
                                             </td> -->
                                             <td>
-                                                <a href="environmentprotectionedit.php?environmentprotectionedit=<?= $environmentprotectionid; ?>" class="label label-sm label-warning">Edit</a><br><br>
+                                                <a href="environmentprotectionedit.php?environmentprotectionedit=<?= $environmentprotectionid; ?>" <i class="fa fa-pencil" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
                                                 
-                                               <a href="edit/delete.php?environmentprotectionedit=<?= $environmentprotectionid; ?>" class="label label-sm label-danger">Delete</a>
+                                               <a href="edit/delete.php?environmentprotectionedit=<?= $environmentprotectionid; ?>"<i class="fa fa-trash" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i> </a>
                                             </td>
                                         </tr>
                                         <?php } ?>

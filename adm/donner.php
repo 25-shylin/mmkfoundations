@@ -107,9 +107,9 @@ session_start();
                                         <td><?= $modifydate; ?></td> -->
                                         <td><?= $status; ?></td>
                                         <td>
-                                            <a href="donateredit.php?donateredit=<?= $donaterid; ?>" class="label label-sm label-warning">Edit</a><br><br>
-                                            <a href="donner-bill.php?donaterprint=<?= $donaterid; ?>" class="label label-sm label-warning">Print</a><br><br>
-                                           <a href="edit/delete.php?donatersedit=<?= $donaterid; ?>" class="label label-sm label-danger">Delete</a>
+                                            <a href="donner-details.php?donateredit=<?= $donaterid; ?>"<i class="fa fa-eye" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i> </a>
+                                            <a href="donateredit.php?donateredit=<?= $donaterid; ?>"<i class="fa fa-pencil" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i> </a>
+                                           <a href="edit/delete.php?donatersedit=<?= $donaterid; ?>" <i class="fa fa-trash" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
                                         </td>
                                     </tr>
                                     <?php } ?>

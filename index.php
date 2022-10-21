@@ -534,9 +534,9 @@
                     ?>
                         <div class="item">
                             <div class="inner-box">
-                                <div class="img_holder">
+                                <div class="img_holder" >
                                     <a href="events.php">
-                                        <img loading="lazy" src="eventsphoto/<?= $eventsphoto ?>" alt="images" />
+                                        <img loading="lazy" src="eventsphoto/<?= $eventsphoto ?>" alt="images" style="width:330px;height:230px;"/>
                                     </a>
                                 </div>
                                 <div class="image-content text-center ">

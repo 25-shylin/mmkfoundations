@@ -120,7 +120,10 @@ session_start();
                                                             <label for="beneficiaryimg">Beneficiary Img</label>
                                                             <input type="file" class="form-control" id="beneficiaryimg" name="beneficiaryimg">
                                                         </div>
-                                                   
+                                                        <div class="form-group">
+                                                            <label for="guardianparentscareofoccupation">Status</label>
+                                                            <input type="checkbox" class="form-control"  name="eligible" value="1"/>
+                                                        </div>
                                                         
                                                         <div class="form-group">
                                                             
@@ -173,7 +176,7 @@ session_start();
         $problemcasestudies = $_POST['problemcasestudies'];
         $solution = $_POST['solution'];
         $comments = $_POST['comments'];
-        
+       $eligible = $_POST['eligible'];
         
 
 
@@ -196,7 +199,7 @@ session_start();
 
        //-----------------------------------------//
 
-      $beneficiaryquery = "insert into beneficiary(beneficiaryno, date, tag, project, firstname, lastname, permanataddress, currentaddress, guardianparentscareofphonenumber, whatsappnumber, aadharnumber, guardianparentscareofoccupation, problemcasestudies, solution, comments, beneficiaryimg)values('$beneficiaryno', '$date', '$tag', '$project', '$firstname', '$lastname', '$permanataddress', '$currentaddress', '$guardianparentscareofphonenumber', '$whatsappnumber', '$aadharnumber', '$guardianparentscareofoccupation', '$problemcasestudies', '$solution', '$comments', '$beneficiaryimg')";
+      $beneficiaryquery = "insert into beneficiary(beneficiaryno, date, tag, project, firstname, lastname, permanataddress, currentaddress, guardianparentscareofphonenumber, whatsappnumber, aadharnumber, guardianparentscareofoccupation, problemcasestudies, solution, comments, beneficiaryimg,eligible)values('$beneficiaryno', '$date', '$tag', '$project', '$firstname', '$lastname', '$permanataddress', '$currentaddress', '$guardianparentscareofphonenumber', '$whatsappnumber', '$aadharnumber', '$guardianparentscareofoccupation', '$problemcasestudies', '$solution', '$comments', '$beneficiaryimg','$eligible')";
        
        if ($firstname == '') {
         echo "<script>alert('please enter firstname')</script>";

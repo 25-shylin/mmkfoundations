@@ -11,6 +11,7 @@ session_start();
     <!--==================================*
                Main Content Section
     *====================================-->
+   
     <div class="main-content page-content">
 
         <!--==================================*
@@ -22,7 +23,7 @@ session_start();
                 <div class="col-12 mt-4">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="header-title">Volunteers</h4>
+                            <h4 class="header-title sss">Volunteers</h4>
                             <div class="table-responsive datatable-primary">
                                 <table id="dataTable2" class="text-center">
                                     <thead class="text-capitalize">
@@ -94,8 +95,10 @@ session_start();
                                          <td><?= $status; ?></td> 
                                         
                                         <td>
-                                            <a href="volunteersedit.php?volunteersedit=<?= $volunteersindividualsid; ?>" class="label label-sm label-warning">Edit</a><br><br>
-                                           <a href="edit/delete.php?volunteersindividualsid=<?= $volunteersindividualsid; ?>" class="label label-sm label-danger">Delete</a>
+                                        <a href="volunteers-details.php?volunteersedit=<?= $volunteersindividualsid; ?>"<i class="fa fa-eye" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
+                                        <a href="volunteersedit.php?volunteersedit=<?= $volunteersindividualsid; ?>" <i class="fa fa-pencil" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
+                                            <!-- <a href="volunteersedit.php?volunteersedit=<?= $volunteersindividualsid; ?>" class="label label-sm label-warning">Edit</a><br><br> -->
+                                           <a href="edit/delete.php?volunteersindividualsid=<?= $volunteersindividualsid; ?>" <i class="fa fa-trash" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
                                         </td>
                                     </tr>
                                     <?php } ?>

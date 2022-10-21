@@ -88,8 +88,8 @@ session_start();
                                          -->
                                        
                                         <td>
-                                            <a href="eventsedit.php?eventsedit=<?= $eventsid; ?>" class="label label-sm label-warning">Edit</a><br><br>
-                                           <a href="edit/delete.php?eventsedit=<?= $eventsid; ?>" class="label label-sm label-danger">Delete</a>
+                                            <a href="eventsedit.php?eventsedit=<?= $eventsid; ?>" <i class="fa fa-pencil" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i> </a>
+                                           <a href="edit/delete.php?eventsedit=<?= $eventsid; ?>" <i class="fa fa-trash" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
                                         </td>
                                     </tr>
                                     <?php } ?>

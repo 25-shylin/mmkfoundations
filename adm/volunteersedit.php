@@ -46,7 +46,9 @@ session_start();
             <div class="row">
                 <!-- Primary table -->
                 <div class="col-12 mt-4">
+            
                     <div class="card">
+                      
                         <div class="card-body">
                             <h4 class="header-title">Volunteers</h4>
                             <div class="table-responsive datatable-primary">
@@ -128,7 +130,9 @@ session_start();
                                                 </div>
                                                     <div class="col-xs-12">
                                                         <br>
-                                                        <input type="submit" name="submit" class="btn btn-primary pull-right" value="Submit">
+                                                        
+                                                      <input type="submit" name="submit" class="btn btn-primary pull-right" value="Submit" style="width: 100px;">
+                                                      <a href="http://localhost/mmkfoundation/adm/volunteers.php">    <input type="button"  class="btn btn-primary pull-right" value="Back" style="margin-right: 10px;width:100px;"></a>
                                                     </div>
                                                     
                                                 </div>

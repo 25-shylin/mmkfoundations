@@ -148,7 +148,10 @@ session_start();
                                                             <textarea class="form-control" id="comments" name="comments"><?= $comments ?></textarea>
                                                         </div>
 
-                                                        
+                                                        <div class="form-group">
+                                                            <label for="comments">Eligible</label>
+                                                            <input type="checkbox" name="eligible" value='1' <?= $eligible == "1" ? "checked" : "" ?>
+                                                        </div>
                                                         
                                                         <div class="form-group">
                                                             <label for="beneficiaryimg">Beneficiary Img</label>
@@ -211,7 +214,7 @@ session_start();
         $solution = $_POST['solution'];
         $comments = $_POST['comments'];
         $modifydate = date("d/m/y");
-
+$eligible = $_POST['eligible'];
         $old_img = $_POST['old_img'];
        
 
@@ -236,7 +239,7 @@ session_start();
 
        
     
-      $employeequery = "update beneficiary set date = '$date', tag = '$tag', project = '$project', firstname = '$firstname', lastname = '$lastname', permanataddress = '$permanataddress', currentaddress = '$currentaddress', guardianparentscareofphonenumber = '$guardianparentscareofphonenumber', whatsappnumber = '$whatsappnumber', aadharnumber = '$aadharnumber', guardianparentscareofoccupation = '$guardianparentscareofoccupation', problemcasestudies = '$problemcasestudies', solution = '$solution', comments = '$comments', beneficiaryimg = '$beneficiaryimg', modifydate = '$modifydate' where beneficiaryid = '$beneficiaryid'";
+      $employeequery = "update beneficiary set date = '$date', tag = '$tag', project = '$project', firstname = '$firstname', eligible = '$eligible', lastname = '$lastname', permanataddress = '$permanataddress', currentaddress = '$currentaddress', guardianparentscareofphonenumber = '$guardianparentscareofphonenumber', whatsappnumber = '$whatsappnumber', aadharnumber = '$aadharnumber', guardianparentscareofoccupation = '$guardianparentscareofoccupation', problemcasestudies = '$problemcasestudies', solution = '$solution', comments = '$comments', beneficiaryimg = '$beneficiaryimg', modifydate = '$modifydate' where beneficiaryid = '$beneficiaryid'";
       
        if ($firstname == '') {
         echo "<script>alert('Please Enter First Name')</script>";

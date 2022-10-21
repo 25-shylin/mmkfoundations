@@ -167,8 +167,9 @@ session_start();
                                         
                                          -->
                                         <td>
-                                            <a href="employeeedit.php?employeeedit=<?= $employeeid; ?>" class="label label-sm label-warning">Edit</a><br><br>
-                                           <a href="edit/delete.php?employeeedit=<?= $employeeid; ?>" class="label label-sm label-danger">Delete</a>
+                                        <a href="employee-detail.php?employeeedit=<?= $employeeid; ?>" <i class="fa fa-eye" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
+                                            <a href="employeeedit.php?employeeedit=<?= $employeeid; ?>" <i class="fa fa-pencil" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
+                                           <a href="edit/delete.php?employeeedit=<?= $employeeid; ?>" <i class="fa fa-trash" aria-hidden="true" style="color: #00807c;width:50px;font-size:20px;"></i></a>
                                         </td>
                                     </tr>
                                     <?php } ?>

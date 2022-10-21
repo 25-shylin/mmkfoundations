@@ -3740,6 +3740,14 @@ button:focus {
     -moz-appearance: none;
     appearance: none;
 }
+ .detail{
+   
+        margin-top: 100px;
+    
+}
+.bodyyy{
+    color: #ee592b;
+}
 
 
 
